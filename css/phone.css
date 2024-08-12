@@ -1,0 +1,61 @@
+
+/* Search element */
+.right{
+    display: none;
+}
+
+/* navigation bar */
+.navigation_bar{
+    justify-content: center;
+}
+
+/* item like about us,contact us */
+.item{
+    margin-left: 10px;
+}
+.nav a{
+    border: 2px solid gray;
+    border-radius: 12px;
+    padding: 3px;
+}
+/* order now button  */
+main,#btn{
+    font-size: 16px;
+}
+ 
+/* linearGradient image */
+.content{
+    padding:0px;
+    height: 600px;
+}
+.content p{
+    margin: 10px;
+}
+.content::before{
+    height: 551px;
+}
+
+/* search box big  */
+#search .search_box input {
+    padding: 12px;
+    font-size: 15px;
+    width: 78%;
+}
+#search .search_box img {
+    width: 44px;
+    height: 38px;
+    margin: 9px;
+}
+.meal {
+    height: 390px;
+    width: 320px;
+    margin: 15px;
+    margin-left: 20px;
+}
+
+#featured{
+    overflow: auto;
+}
+.clients img{
+    height: 120px;
+}
