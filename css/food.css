@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body,html{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav img{
+    margin-left: 14px;
+}
+
+/* whole navigation bar */
+.navigation_bar{
+    display: flex;
+    background-color: rgba(27, 26, 26, 0.3);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+.content::before{
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 350px;
+    background:linear-gradient(180deg,rgb(255, 255, 255,0.3),rgba(0,0,0,0.8)), url(/images/img1.jpg) center center/cover no-repeat;
+    z-index: -1;
+}
+
+/* ul inside navigation bar */
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+/* lists Home about us etc */
+.item{
+    list-style: none;
+    margin-left:40px ;
+}
+
+/* anchor */
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s linear;
+}
+a:hover{
+    color: gray;
+}
+
+/* main section */
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 200px;
+    color: rgb(255, 255, 255);
+    font-weight:400;
+    font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+    height: 350px;
+}
+#heading{
+    margin: 9px;
+    text-align: center;
+}
+
+/* search right */
+.right{
+    position: absolute;
+    top: 11px;
+    right: 50px;
+    /* border: 1px solid red; */
+}
+
+.right input{
+    position: relative;
+    bottom: 8px;
+    padding: 5px 5px;
+    width: 400px;
+    border-radius: 20px;
+    border: none;
+}
+.right input:hover{
+    background-color: rgb(244, 238, 238);
+}
+#btn{
+    cursor: pointer;
+    padding: 8px 29px;
+    margin: 15px 13px;
+    border-radius: 8px;
+    border: none;
+    font-size:15px;
+    background-color: red;
+}
+#btn:hover{
+    background-color: rgb(255, 229, 229);
+}
+#btn:active{
+    background-color: rgb(255, 0, 0);
+}
+:root{
+    --font:"Pacifico", cursive;
+}
+main,#btn{
+        
+        font-family: var(--font);
+        font-style: normal;
+        font-size: 20px;
+}
+#featured{
+    height: 940px;
+    background-color: lightcoral;
+    position: relative;
+    top: -55px;
+}
+
+#search{
+    background-color: lightcoral;
+    padding-top: 10px;
+    position: relative;
+    top: -53px;
+}
+.search_box{
+    display: flex;
+    align-items: center;
+}
+#search .search_box input{
+    padding: 20px;
+    font-size: 1.2rem;
+    width:90%;
+    border-radius: 23px;
+    border: none;
+    background-color:pink;
+    box-sizing: border-box;
+}
+input[placeholder]{
+    color: black;
+}
+#search .search_box img{
+    width: 50px;
+    height: 40px;
+    margin: 20px;
+    filter: invert(1);
+}
+.featured_heading{
+    text-align: center;
+    padding: 5px;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+.meal{
+    height: 390px;
+    width: 449px;
+    margin:22px;
+    margin-left: 27px;
+    border: 2px solid black;
+    float: left;
+    text-align: center;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    line-height: 1;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px black;
+}
+.meal:hover{
+    transform: scale(1.05);
+}
+.meal img{
+    width: auto;
+}
+.sub-heading2,.sub-heading3,.sub-heading4,.sub-heading5,.sub-heading6{
+    padding: 20px;
+}
+.CheckoutBtn{
+    position: relative;
+    bottom: 20px;
+    right: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: red;
+    font-family: "Pacifico", cursive;
+    float: right;
+}
+.CheckoutBtn:hover{
+    background-color: rgb(255, 229, 229);
+    cursor: pointer;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 100vw;
+}
+.client{
+    position: relative;
+    bottom: 55px;
+    color: rgb(32, 47, 78);
+    border-bottom: 4px dotted darkblue;
+
+}
+
+.h-clients{
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 20px;
+    border-bottom: 4px dotted rgb(18, 28, 25);
+}
+.client-items{
+    padding: 10px;
+    margin: 15px;
+}
+.contact{
+    background-color: rgb(27, 30, 53);
+    bottom: 54px;
+    height: 550px;
+    color: white;
+}
+.contact-heading{
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 20px;
+    font-family: var(--font);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.3rem;
+}
+.contact .form input{
+    width: 200px;
+    margin:0 0 20px 20px;
+    padding: 12px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+}
+label{
+    margin:0 0 20px 20px;
+}
+.submit-btn{
+    font-size: 2rem;
+    color: white;
+    width: 200px;
+    margin:0 0 20px 20px;
+    padding: 12px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 24px;
+}
+.submit-btn:hover{
+background-color: darkblue;
+cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
