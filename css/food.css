@@ -205,13 +205,14 @@ input[placeholder]{
     height: 180px;
     width: 100vw;
     margin: 20px;
+    overflow-x: scroll;
+    scrollbar-color: red  rgba(170, 203, 230, 0.4);
 }
 .client{
     position: relative;
     bottom: 55px;
     color: rgb(32, 47, 78);
     border-bottom: 4px dotted darkblue;
-
 }
 
 .h-clients{
