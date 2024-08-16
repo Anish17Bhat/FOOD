@@ -223,12 +223,16 @@ input[placeholder]{
 }
 .client-items{
     padding: 10px;
+    height: 100px;
     margin: 15px;
+}
+.client-items img{
+    height: 100%;
 }
 .contact{
     background-color: rgb(27, 30, 53);
     bottom: 54px;
-    height: 550px;
+    height: 464px;
     color: white;
 }
 .contact-heading{
@@ -270,8 +274,10 @@ cursor: pointer;
 }
 footer{
     background-color: black;
-    color: white;
-    font-size: 1.1rem;
-    text-align: center;
+    color: rgb(215, 205, 205,0.7);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
